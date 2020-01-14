@@ -5,19 +5,19 @@
     color="transparent"
     :tile="true"
   >
-    <n-link :to="`/curso/${slug}`"> 
+    <n-link :to="`/aluno/curso/${slug}`"> 
       <v-img
         :src="image"
       />
     </n-link>
     <div class="media-and-footer-container">
-      <n-link :to="`/curso/${slug}`" class="footer-container">
-        <v-card-title :to="'/curso/' + slug">{{title}}</v-card-title>
-        <v-card-subtitle class="mt-0" :to="'/curso/' + slug">{{teacher}}</v-card-subtitle>
+      <n-link :to="`/aluno/curso/${slug}`" class="footer-container">
+        <v-card-title :to="'/aluno/curso/' + slug">{{title}}</v-card-title>
+        <v-card-subtitle class="mt-0" :to="'/aluno/curso/' + slug">{{teacher}}</v-card-subtitle>
       </n-link>
       <share-btn
         class="media-container"
-        :url="'/curso/' + slug"
+        :url="'/aluno/curso/' + slug"
         :title="title"
         :description="description"
       />
